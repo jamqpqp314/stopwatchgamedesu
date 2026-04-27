@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blind Stopwatch Game</title>
+  <meta name="description" content="A simple stopwatch game where you have to stop at the target time blindly.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="game-container">
+    <div class="target-display">
+      目標：<span id="target-time">0</span>秒
+    </div>
+    
+    <div class="time-display">
+      <span id="current-time">0.00</span>
+    </div>
+
+    <div class="controls">
+      <button id="toggle-btn" class="btn primary">Start</button>
+      <button id="reset-btn" class="btn secondary">Reset</button>
+    </div>
+
+    <div id="result-area" class="result-area hidden">
+      <div class="result-item">
+        <span class="label">結果:</span>
+        <span id="result-time" class="value">0.00秒</span>
+      </div>
+      <div class="result-item">
+        <span class="label">誤差:</span>
+        <span id="result-diff" class="value">0.00秒</span>
+      </div>
+      <div class="evaluation" id="evaluation">
+        -
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
